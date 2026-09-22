@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naming Ceremony Invitation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background: #fdf6ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        /* Background Layer simulating Canva floral style */
+        .bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=1200&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px) opacity(0.35);
+            z-index: -1;
+        }
+        .invitation-card {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 3px double #d4af37;
+            border-radius: 16px;
+            max-width: 500px;
+            width: 100%;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+        /* Top Corner Decorative Elements */
+        .invitation-card::before, .invitation-card::after {
+            content: "🌸";
+            position: absolute;
+            font-size: 24px;
+            top: 15px;
+        }
+        .invitation-card::before { left: 20px; }
+        .invitation-card::after { right: 20px; }
+
+        .deity-img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #d4af37;
+            margin: 0 auto 10px auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .mantra {
+            font-size: 13px;
+            color: #b8860b;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .main-heading {
+            font-size: 26px;
+            color: #800020;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        .sub-heading {
+            font-size: 16px;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .baby-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #d4af37;
+            margin: 0 auto 20px auto;
+            display: block;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+        }
+        .section-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #b8860b;
+            margin-top: 15px;
+            margin-bottom: 3px;
+            font-weight: bold;
+        }
+        .names {
+            font-size: 18px;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .details-box {
+            background: rgba(212, 175, 55, 0.08);
+            border-top: 1px dashed #d4af37;
+            border-bottom: 1px dashed #d4af37;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .date-time {
+            font-size: 16px;
+            color: #800020;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .maps-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37, #aa7c11);
+            color: #white;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 25px;
+            margin-top: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            color: #fff;
+        }
+        .maps-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        .invited-by {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.6;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        .footer-blessing {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-overlay"></div>
+
+    <div class="invitation-card">
+        <!-- Lord Ayyappa Swami Image Section -->
+        <img src="image_cVSTKO.png" alt="Lord Ayyappa Swami" class="deity-img">
+        <div class="mantra">Swamiye Saranam Ayyappa</div>
+
+        <h1 class="main-heading">Naming Ceremony</h1>
+        <p class="sub-heading">& Cradle Ceremony</p>
+
+        <!-- Baby Image Section -->
+        <img src="image_7Nfad9.png" alt="Our Little Bundle of Joy" class="baby-img">
+
+        <p class="sub-heading">We cordially invite you to share our joy and bless our precious little miracle.</p>
+
+        <div class="section-title">Parents</div>
+        <div class="names">Father: Gunda Mahesh<br>Mother: Gunda Sneha</div>
+
+        <div class="details-box">
+            <div class="section-title">Date & Time</div>
+            <div class="date-time">Wednesday, 23rd September 2026</div>
+            <div class="date-time">at 11:35 AM</div>
+        </div>
+
+        <div class="section-title">Venue Location</div>
+        <a href="https://maps.app.goo.gl/7Kp7Q4sJy8vSXfn96" target="_blank" class="maps-btn">
+            📍 View Venue on Google Maps
+        </a>
+
+        <div class="invited-by">
+            <div class="section-title">Invited By</div>
+            <strong>Smt Srt Shekali Sathyamma</strong><br>& Late Sailu
+        </div>
+
+        <p class="footer-blessing">Please join us for lunch to celebrate this wonderful milestone.</p>
+    </div>
+
+</body>
+</html>
